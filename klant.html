@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navClass">
+        <header><img class="logo" src="img/logo.png"></header>
+        <ul>
+            <li><a href="login.html" class="login">Log in</a> </li>
+            <li><a href="index.html" class="active">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+        <form name="clientform" method="post" action="insert.php">
+            <label for="aanhef"> Aanhef </label>
+            <select id="aanhef" name="aanhef">
+                <option value="Man">Dhr</option>
+                <option value="vrouw">Mevrouw</option>
+            </select>
+            <br>
+            <label for="vname">Voornaam</label>
+            <div class="wrapper">
+                <input type="text" id="vname" name="firstname" placeholder="Uw Naam.." required="required" />
+                <span class="vnamespan"></span>
+            </div>
+            <label for="vname">Tussenvoegsel</label>
+            <input type="text" id="tussen" name="tussen" placeholder="Uw Tussenvoegsel.." />
+
+            <label for="aname">Achternaam</label>
+            <div class="wrapper">
+                <input type="text" id="lname" name="lastname" placeholder="Uw Achternaam.." required="required" />
+                <span class="anamespan"></span>
+            </div>
+            <label for="snaam">Straatnaam</label>
+            <div class="wrapper">
+                <input type="text" id="sname" name="straatnaam" placeholder="Uw Straatnaam.." required="required" />
+                <span class="snamespan"></span>
+            </div>
+            <label for="hnummer">Huisnummer</label>
+                <div class="wrapper">
+                <input type="number" id="hnummer" name="huisnummer" placeholder="Uw Huisnummer.." required="required" />
+                <span class="hnumberspan"></span>
+                </div>
+
+
+            <label for="postcode">Postcode</label> 
+            <div class="wrapper">
+                <input type="text" id="postcode" name="postcode" placeholder="Uw Postcode.." pattern="[\d]{4}[A-Z]{2}" required="required" />
+                <span class="postspan"></span>
+            </div>
+
+            <label for="pnaam">Plaatsnaam</label>
+            <div class="wrapper">
+                <input type="text" id="pnaam" name="plaatsnaam" placeholder="Plaatsnaam.." required="required" />
+                <span class="placespan"></span>
+            </div>
+
+
+            <label for="tele">Telefoonnummers</label>
+            <div class="wrapper">
+                <input type="number" id="telefoon" name="telefoonnummers" placeholder=" Uw Telefoonnummers..." pattern="[\d]{10}" required="required" />
+                <span class="telespan"></span>
+            </div>
+
+
+            <label for="email">Email adres</label>
+            <div class="wrapper">
+            <input type="email" id="email" name="email" placeholder="Email Adres.." required="required" />
+            <span class="emailspan"></span>
+            </div>
+
+            <label for="Legitimatie"> Legitimatie soort </label>
+            <select id="Legitimatie" name="legitimatie">
+                <option value="Identiebewijs">identiebewijs</option>
+                <option value="Paspoort">Paspoort</option>
+                <option value="Rijbewijs">Rijbewijs</option>
+            </select>
+            <label for="Legitimatie">Legitimatie nummer</label>
+            <div class="wrapper">
+            <input type="number" id="legitimatie" name="legitimatie_nummer" placeholder="Uw Legitimatie nummer...">
+            <span class="legitimatiespan"></span>
+            </div>
+
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
